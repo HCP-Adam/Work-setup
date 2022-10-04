@@ -1,0 +1,1 @@
+get-filehash -path "(path)" -Algorithm (algorithm desired) | format-list | clip
