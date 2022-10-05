@@ -1,10 +1,10 @@
-# string to search in file
-word = 'mirati'
+import colorama
+from colorama import Fore, Style
+start = "\033[1m"
+end = "\033[0;0m"
 with open(r"domain-names.txt", 'r') as fp:
-    # read all lines in a list
-    lines = fp.readlines()
-    for line in lines:
-        # check if string present on a current line
-        if line.find(word) != -1:
-            print('New Domain Registered')
-            print(line)
+    for l_no, line in enumerate(fp):
+        # search string
+        if 'mirati' in line:
+            print('New Domain Registered: ' + start + Fore.RED + line + end)
+            print(Style.RESET_ALL)
