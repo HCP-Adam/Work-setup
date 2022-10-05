@@ -6,6 +6,5 @@ with open(r"domain-names.txt", 'r') as fp:
     for line in lines:
         # check if string present on a current line
         if line.find(word) != -1:
-            print(word, 'string exists in file')
-            print('Line Number:', lines.index(line))
-            print('Line:', line)
+            print('New Domain Registered')
+            print(line)
