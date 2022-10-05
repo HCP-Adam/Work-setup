@@ -1,11 +1,11 @@
-with open(r"domain-names.txt", 'r') as f:
-    for index, line in enumerate(f):
-
-        # search string
-        if 'mirati' in line:
-            print('String found in a file')
-            # don't look for next lines
-            break
-        else:
-            print('String not found in file')
-            break
+# string to search in file
+word = 'mirati'
+with open(r"domain-names.txt", 'r') as fp:
+    # read all lines in a list
+    lines = fp.readlines()
+    for line in lines:
+        # check if string present on a current line
+        if line.find(word) != -1:
+            print(word, 'string exists in file')
+            print('Line Number:', lines.index(line))
+            print('Line:', line)
