@@ -1,0 +1,19 @@
+Website blocking
+Navigate to:
+https://security.microsoft.com/preferences2/custom_ti_indicators~2Furl?tid=f535743e-b6ee-4533-8cf5-b1e76dd9ae2b
+Under "Rules" go to "Indicators"
+Choose IP addresses or URLs/Domains
+Click "Add Item"
+Enter the IP address or URL
+Go through the menu choosing the options you want
+Done
+
+File Blocking:
+Navigate to:
+https://security.microsoft.com/preferences2/custom_ti_indicators~2Furl?tid=f535743e-b6ee-4533-8cf5-b1e76dd9ae2b
+Under "Rules" go to "Indicators"
+Choose File Hash
+Click "Add Item"
+Enter File Hash
+Go through the menu choosing the options you want
+Done
