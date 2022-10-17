@@ -1,0 +1,10 @@
+Log in with leanLAPPS password, user is .\MTIAL
+
+Windows defender firewall rules (admin)
+Inbound rules
+Enable Remote Desktop - (TCP-WS-In)/Remote Desktop(TCP_WSS_IN)
+
+then go to regedit
+"Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles"
+Look for the one named Network under Profile Name
+For the value that is Category type REG_DWORD change value data from 0 to 1 (1 being private network, 0 being public, 2 being domain)
