@@ -1,0 +1,7 @@
+a	@	13.56.65.180	600 seconds	
+	a	@	44.227.135.91	600 seconds	
+	a	@	54.67.2.97	600 seconds	
+	a	@	54.68.66.84	600 seconds
+  
+  cname	info	mirati-geo.txproxy.com	1/2 Hour	
+	cname	www	mirati-geo.txproxy.com	1 Hour
