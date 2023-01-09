@@ -1,0 +1,35 @@
+On the Linux Machine
+Type command:
+sudo apt-get install openssh-server
+
+Enable the ssh service by typing:
+sudo systemctl enable ssh
+## OR enable and start the ssh service immediately ##
+sudo systemctl enable ssh --now
+
+Start the ssh service by typing:
+sudo systemctl start ssh
+
+Configure firewall and open port 22
+
+You must configure the Ubuntu Linux firewall called ufw. Here is how open or allow port 22 when using ufw on Ubuntu:
+sudo ufw allow ssh
+sudo ufw enable
+sudo ufw status
+
+Copy file from Windows to Ubuntu server
+
+Execute this command in command prompt
+
+scp Filepathinwindows username@ubuntuserverip:linuxserverpath
+
+Example
+scp D:/TxtFile.txt root@ipaddress:/home/usr/
+
+Will need to input the password for whatever user you designate before the @ipaddress
+***Real world example**
+scp C:\Users\BaileyA\Documents\Mimecast_log_recorder\MPE.Mimecast.Azure.Sentinel-1.0.7.tar.gz.zip mti_admin@10.4.7.40:
+
+Once there, I wanted to move it from mti_admin to my directory (adam), I navigated to mti_admin where the file was located then used the chmod and mv command (I was logged in as myself, adam)
+sudo chmod 777 /home/mti_admin/MPE.Mimecast.Azure.Sentinel-1.0.7.tar.gz.zip
+sudo mv MPE.Mimecast.Azure.Sentinel-1.0.7.tar.gz.zip ~
