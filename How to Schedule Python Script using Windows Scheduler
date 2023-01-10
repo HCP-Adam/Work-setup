@@ -1,0 +1,56 @@
+Step-1: Prepare the Python Script
+
+Write the code or get the script
+
+Step-2: Save the Python Script
+
+Once you’re done writing the script, save it as a Python file (where the file extension is .py):
+
+For instance, let’s save the file as hello_world.py under the following path:
+C:\Users\Ron\Desktop\hello_world.py
+
+Step-3: Create Batch File to Run the Python Script
+
+Next, create a batch file to run the Python script.
+
+To start, open Notepad, and then use the following template:
+
+"Path where your Python exe is stored\python.exe" "Path where your Python script is stored\script name.py"
+pause
+
+For our example:
+
+    The path where the Python exe is stored is:
+    “C:\Users\Ron\AppData\Local\Programs\Python\Python39\python.exe”
+    The Path where the Python script is stored is (see step-2):
+    “C:\Users\Ron\Desktop\hello_world.py”
+
+Here are the paths in the Notepad (you’ll need to adjust those paths to fit your instances):
+
+"C:\Users\Ron\AppData\Local\Programs\Python\Python39\python.exe" "C:\Users\Ron\Desktop\hello_world.py"
+pause
+
+Finally, save the Notepad with your file name and the “bat” file extension:
+
+file_name.bat
+
+For example, let’s save the Notepad as:
+
+run_python_script.bat
+
+Once you save the Notepad, a new batch file (called run_python_script) will be created at the specified location:
+C:\Users\Ron\Desktop\run_python_script.bat
+Step-4: Schedule the Python Script using the Windows Scheduler
+
+In order to schedule the Python script using the Windows Scheduler:
+
+    Open the Windows Control Panel and then click on the Administrative Tools
+    Double-click on the Task Scheduler, and then choose the option to ‘Create Basic Task…’
+    Type a name for your task (you can also type a description if needed), and then press Next. For instance, let’s name the task as: Run Hello World
+    Choose to start the task ‘Daily‘ since we wish to run the Python script daily at 6am. Also specify the start date and time (6am for our example)
+    Select, Start a program, and then press Next
+    Use the Browse button to find the batch file (run_python_script.bat) that runs the Python script. In our case:
+
+C:\Users\Ron\Desktop\run_python_script.bat
+
+Finally, click on Finish, and you should be good to go. From this point onward, you’ll be greeted with ‘Hello World!’ everyday at 6am.
